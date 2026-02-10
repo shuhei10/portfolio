@@ -1,22 +1,70 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Portfolio | Shuhei</title>
 </head>
 
 <body>
-    <h1>My Portfolio</h1>
+    <div class="wrap">
+        <section class="hero">
+            <div>
+                <h1>フロントエンド / Web制作</h1>
+                <p class="sub">HTML/CSS/JavaScript と React(TypeScript) で「見た目×実装」をまとめて対応します。</p>
+            </div>
+            <div class="cta">
+                <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Xで相談する</a>
+                <a class="btn" href="#contact">お問い合わせ</a>
+            </div>
+        </section>
 
-    <ul>
-        <li><a href="./works/森の宿　こもれび庵/index.html"> travel site</a></li>
-        <li><a href="./works/ブランドサイト制作/index.html">LP Site</a></li>
-        <li><a href="./works/webサイト/index.html">Service</a></li>
-    </ul>
-    <a href="./works/quiz/dist/index.html" target="_blank" rel="noopener">
-        世界遺産クイズ（React）
-    </a>
+        <h2>Web制作（HTML/CSS/JS）</h2>
+        <div class="grid">
+            <a class="card" href="./works/komorebi-an/index.html" target="_blank" rel="noopener">
+                <div class="title">旅館サイト（森の宿 こもれび庵）</div>
+                <div class="meta">LP/ブランドサイト｜レスポンシブ</div>
+                <div class="tags">
+                    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                </div>
+            </a>
+
+            <a class="card" href="./works/ブランドサイト制作/index.html" target="_blank" rel="noopener">
+                <div class="title">ブランドサイト（Aerblu）</div>
+                <div class="meta">デザイン重視の1ページ構成</div>
+                <div class="tags">
+                    <span class="tag">HTML</span><span class="tag">CSS</span>
+                </div>
+            </a>
+
+            <a class="card" href="./works/webサイト/index.html" target="_blank" rel="noopener">
+                <div class="title">Webデザインスクール（WAVESTUDIO）</div>
+                <div class="meta">Top / Services / Pricing / Contact</div>
+                <div class="tags">
+                    <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">JS</span>
+                </div>
+            </a>
+        </div>
+
+        <h2>アプリ開発（React）</h2>
+        <div class="grid">
+            <a class="card" href="./works/quiz/dist/index.html" target="_blank" rel="noopener">
+                <div class="title">世界遺産クイズ（PWA）</div>
+                <div class="meta">React + TypeScript / PWA対応</div>
+                <div class="tags">
+                    <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span
+                        class="tag">PWA</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 id="contact">お問い合わせ</h2>
+        <p class="sub">まずは X のDMが一番早いです。対応可能な内容・見積もり目安も返信します。</p>
+
+        <footer>© Portfolio</footer>
+    </div>
 </body>
 
 </html>
