@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #777E41;
+    font-family: YuMincho;
+
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+nav {
+    padding-top: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #777E41;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+#header .logo {
+    max-width: 190px;
+    line-height: 0;
+}
+
+#header .logo a {
+    display: block;
+}
+
+#header .logo-title {
+    max-width: 190px;
+}
+
+.logo-line1 {
+    letter-spacing: 0.1em;
+}
+
+.logo-line2 {
+    font-weight: bold;
+}
+
+#header .navi {
+    display: flex;
+    align-items: center;
+    color: #777E41;
+}
+
+#header .navi li {
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.mainvisual {
+    margin-bottom: 80px;
+}
+
+.introduction {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.catchphrase {
+    font-size: 20px;
+    font-family: Shippori Mincho;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.introduction .text {
+    font-size: 15px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.section-title .en {
+    display: block;
+    font-size: 25px;
+}
+
+.section-title .ja {
+    display: block;
+    font-size: 15px;
+}
+
+#room {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0 50px;
+}
+
+#room .img {
+    width: 50%;
+}
+
+#room .detail {
+    width: 50%;
+    padding-left: 80px;
+}
+
+#room .detail p {
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+#view {
+    margin-bottom: 80px;
+    padding: 0 50px;
+}
+
+.view-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.view-list li {
+    width: 32%;
+    margin: 0 2% 2% 0;
+    margin-bottom: 80px;
+}
+
+.view-list li img {
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.view-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+#footer {
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*--------------------------------------------
+スマートフォン
+--------------------------------------------*/
+@media screen and (max-width: 767px) {
+    nav {
+        padding-top: 75px;
+    }
+
+    #header {
+        padding-top: 25px;
+    }
+
+    #header .logo-title {
+        font-size: 14px;
+        padding-top: 50px;
+    }
+
+    #header .navi li {
+        font-size: 12px;
+    }
+
+    .mainvisual {
+        margin-bottom: 50px;
+    }
+
+    .introduction {
+        margin-bottom: 50px;
+    }
+
+    .introduction .catchpharse {
+        font-size: 15px;
+    }
+
+    .introduction .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .section-title {
+        margin-bottom: 0;
+    }
+
+    .section-title .en {
+
+        font-size: 25px;
+    }
+
+    .section-title .ja {
+        font-size: 15px;
+    }
+
+    #room {
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
+    }
+
+    #room .img {
+        width: 100%;
+    }
+
+    #room .detail {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+
+    #room .detail p {
+        font-size: 15px;
+    }
+
+    #view {
+        margin-bottom: 50px;
+    }
+
+    .view-list {
+        flex-direction: column;
+    }
+
+    .view-list li {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+
+    #footer {
+        margin-bottom: 50px;
+    }
+}

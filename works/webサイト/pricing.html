@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing - WAVESTUDIO</title>
+  <link rel="stylesheet" href="./css/pricing.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">WAVESTUDIO</div>
+    <div class="nav-container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Top</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger" onclick="openMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="close" onclick="closeMenu()">×</span>
+      <ul>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>Pricing</h1>
+  </section>
+
+  <section class="about-pricing">
+    <h2>料金について</h2>
+    <p>あなたの成長に合わせた、明確でシンプルな料金プランをご用意しています。<br class="pc-only" /></p>
+    <p>入学金や追加費用は一切ありません。安心してご検討ください。</p>
+
+  </section>
+
+  <section class="course-block">
+    <h2>コース料金一覧</h2>
+
+    <div class="courses-table">
+      <!-- 見出し行 -->
+      <div class="empty"></div>
+      <div class="head cell-head">はじめてのWebデザインコース</div>
+      <div class="head head-cell">実践型フリーランスコース</div>
+
+      <!-- 目的 -->
+      <div class="cell label section-title">目的</div>
+      <div class="purpose">
+        <div class="cell value text-value">
+          <p>
+            未経験からの一歩を<br class="sp-only,pc-only" />丁寧にサポート
+          </p>
+        </div>
+        <div class="cell value value-text">
+          <p>
+            仕事につながる“実力”<br class="sp-only,pc-only" />をつけたい方向け
+          </p>
+        </div>
+      </div>
+
+      <!-- 期間 -->
+      <div class="cell label section-title">期間</div>
+      <div class="period">
+        <div class="cell value">4週間（週2回 × 90分）</div>
+        <div class="cell value">8週間（週2回 × 120分）</div>
+      </div>
+
+      <!-- 料金 -->
+      <div class="cell label section-title">料金</div>
+      <div class="price">
+        <div class="cell value">49,800円（税込）</div>
+        <div class="cell value">129,000円（税込）</div>
+      </div>
+      <!-- 詳細 -->
+      <div class="cell label label-title">詳細</div>
+      <div class="detail">
+        <div class="cell value cell-value">
+          <p>
+            HTML/CSS基礎講座<br />簡易ポートフォリオ制作<br />講師による個別フィードバック(毎回)
+          </p>
+        </div>
+        <div class="cell value detail-cell">
+          <p>
+            HTML/CSS基礎講座<br />Figma/コーディング演習<br />架空クライアント課題制作<br />
+            ポートフォリオ完成支援<br />講師による個別フィードバック(毎回)<br />終了後のフィードバック面談（1回）
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="option">
+    <h2>オプション</h2>
+    <h3>学びを「次の一歩」へつなげたい方へ</h3>
+    <div class="box">
+      <p>
+        <strong>月額プラン：</strong>9,800円／月（税込）<br />
+        <strong>詳細：</strong><br />
+        ポートフォリオ添削（毎月1回）<br />
+        案件獲得ノウハウ共有<br />
+        SNS発信サポート／相談チャット<br />
+        模擬面接／進路相談<br />
+        ※本スクール受講生は初月無料
+      </p>
+      <img src="img/christina-wocintechchat-com-6Dv3pe-JnSg-unsplash.jpg" alt="コーディングの様子" />
+    </div>
+  </section>
+
+  <section class="payment">
+    <h2>お支払い方法</h2>
+    <p>
+      クレジットカード（分割払い対応） <br /><br />銀行振込（請求書対応可）
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>お問い合わせ</h2>
+    <h3>一歩踏み出すその前に、話を聞いてみませんか？</h3>
+    <p>
+      迷っている今こそ、変わるチャンス。
+      <br />安なこと・気になること、何でも気軽に聞いてください。
+    </p>
+    <a href="contact.html" class="btn">お問合せはこちら</a>
+  </section>
+
+  <footer>
+    <div class="logo">WAVESTUDIO</div>
+    <nav>
+      <a href="index.html">Top</a>
+      <a href="service.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>© 2025 WAVESTUDIO / Be the creator of your life.</p>
+  </footer>
+  <script>
+    function openMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = "flex"; // 表示
+      setTimeout(() => {
+        menu.classList.add("show");
+      }, 10); // 少し遅延してクラス付与（アニメーション用）
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.remove("show");
+      setTimeout(() => {
+        menu.style.display = "none";
+      }, 500); // アニメーション時間と合わせて非表示
+    }
+  </script>
+</body>
+
+</html>

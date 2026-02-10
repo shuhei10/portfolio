@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | WAVESTUDIO</title>
+  <link rel="stylesheet" href="./css/contact.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">WAVESTUDIO</div>
+    <div class="nav-container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Top</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger" onclick="openMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="close" onclick="closeMenu()">×</span>
+      <ul>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <h1>Contact</h1>
+    </section>
+
+    <section class="contact-intro">
+      <h2>ご不明な点があればお気軽に<br class="sp-only"> お問い合わせください</h2>
+      <p>学習内容・料金・受講方法など、どんなこと<br class="sp-only">でもご相談いただけます。</p>
+      <p>あなたに合った学び方を一緒に考えましょう。</p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>お問い合わせフォーム</h2>
+      <form class="contact-form">
+        <label for="name">お名前</label>
+        <input type="text" id="name" />
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" />
+
+        <label for="message">詳細</label>
+        <textarea id="message" rows="5"></textarea>
+
+        <button type="submit">送信する</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">WAVESTUDIO</div>
+    <nav>
+      <a href="index.html">Top</a>
+      <a href="service.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>© 2025 WAVESTUDIO / Be the creator of your life.</p>
+  </footer>
+  <script>
+    function openMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = "flex"; // 表示
+      setTimeout(() => {
+        menu.classList.add("show");
+      }, 10); // 少し遅延してクラス付与（アニメーション用）
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.remove("show");
+      setTimeout(() => {
+        menu.style.display = "none";
+      }, 500); // アニメーション時間と合わせて非表示
+    }
+  </script>
+
+</html>
