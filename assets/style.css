@@ -106,23 +106,33 @@ h2 {
     gap: 14px;
 }
 
-/* ========= Work Card 改良 ========= */
+/* ========= Works Card (共通) ========= */
 
 .work-card {
     padding: 0;
     overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        background 0.12s ease,
+        border-color 0.12s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
 }
 
 .thumb {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
     display: block;
     border-bottom: 1px solid var(--line);
     transition: transform 0.4s ease;
 }
 
-/* ホバーでほんのりズーム（プロっぽい演出） */
 .work-card:hover .thumb {
     transform: scale(1.05);
 }
@@ -131,12 +141,17 @@ h2 {
     padding: 16px;
 }
 
-/* 影を少し強める */
-.work-card {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+/* タイトルちょい強め（一覧でも映える） */
+.work-card .title {
+    font-weight: 720;
+    letter-spacing: 0.2px;
 }
-.work-card:hover {
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+
+/* スマホは高さ少し下げて見切れにくく */
+@media (max-width: 720px) {
+    .thumb {
+        height: 180px;
+    }
 }
 
 @media (max-width: 720px) {
