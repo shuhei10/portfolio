@@ -46,16 +46,16 @@ body {
 }
 
 h1 {
-    margin: 0;
-    font-size: 36px;
-    letter-spacing: 0.2px;
-    line-height: 1.15;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
 }
 
 .sub {
-    margin: 10px 0 0;
-    color: var(--muted);
-    line-height: 1.7;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color: #6b7280;
+    margin-top: 18px;
 }
 
 .btn {
@@ -146,17 +146,32 @@ h2 {
     font-weight: 720;
     letter-spacing: 0.2px;
 }
+/* ========= Contact ========= */
 
-/* スマホは高さ少し下げて見切れにくく */
-@media (max-width: 720px) {
-    .thumb {
-        height: 180px;
-    }
+.em {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.inline {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(20, 22, 26, 0.18);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 14px;
+    margin-top: 14px;
 }
 
 @media (max-width: 720px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+    .thumb {
+        height: 180px;
     }
 }
 
@@ -207,4 +222,116 @@ footer {
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 13px;
+}
+.contact-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius, 18px);
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    padding: 18px;
+}
+
+.contact-card h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.form {
+    display: grid;
+    gap: 12px;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field span {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 14px;
+    padding: 11px 12px;
+    font: inherit;
+    color: var(--text);
+    outline: none;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+    box-shadow: 0 0 0 6px var(--ring, rgba(43, 179, 163, 0.25));
+    border-color: rgba(20, 22, 26, 0.14);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.note {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.contact-list li {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.contact-list .k {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.contact-list .v {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.mini-cta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+/* spam honeypot */
+.hidden {
+    display: none;
 }

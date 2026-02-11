@@ -12,8 +12,8 @@
     <div class="wrap">
         <section class="hero">
             <div>
-                <h1>フロントエンド / Web制作</h1>
-                <p class="sub">HTML/CSS/JavaScript と React(TypeScript) で「見た目×実装」をまとめて対応します。</p>
+                <h1>Design × Frontend Engineering</h1>
+                <p class="sub">見た目と実装、どちらも妥協しないWeb制作。</p>
             </div>
             <div class="cta">
                 <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Xで相談する</a>
@@ -25,7 +25,7 @@
         <div class="grid">
             <!-- こもれび庵 -->
             <a class="card work-card" href="./works/komorebi-an/index.html" target="_blank" rel="noopener">
-                <img src="./assets/img/komorebi.jpg" alt="森の宿 こもれび庵 サムネイル" class="thumb">
+                <img src="./assets/img/komorebi.jpg" alt="森の宿 こもれび庵" class="thumb">
                 <div class="card-body">
                     <div class="title">旅館サイト（森の宿 こもれび庵）</div>
                     <div class="meta">LP/ブランドサイト｜レスポンシブ</div>
@@ -36,8 +36,8 @@
             </a>
 
             <!-- Aerblu -->
-            <a class="card work-card" href="./works/ブランドサイト制作/index.html" target="_blank" rel="noopener">
-                <img src="./assets/img/aerblu.jpg" alt="Aerblu サムネイル" class="thumb">
+            <a class="card work-card" href="./works/aerblu/index.html" target="_blank" rel="noopener">
+                <img src="./assets/img/aerblu.jpg" alt="Aerblu" class="thumb">
                 <div class="card-body">
                     <div class="title">ブランドサイト（Aerblu）</div>
                     <div class="meta">デザイン重視の1ページ構成</div>
@@ -48,8 +48,8 @@
             </a>
 
             <!-- WAVESTUDIO -->
-            <a class="card work-card" href="./works/webサイト/index.html" target="_blank" rel="noopener">
-                <img src="./assets/img/wavestudio.jpg" alt="WAVESTUDIO サムネイル" class="thumb">
+            <a class="card work-card" href="./works/WAVESTUDIO/index.html" target="_blank" rel="noopener">
+                <img src="./assets/img/wavestudio.jpg" alt="WAVESTUDIO" class="thumb">
                 <div class="card-body">
                     <div class="title">Webデザインスクール（WAVESTUDIO）</div>
                     <div class="meta">Top / Services / Pricing / Contact</div>
@@ -78,8 +78,91 @@
         </div>
 
 
+        <!-- ===== Contact ===== -->
         <h2 id="contact">お問い合わせ</h2>
-        <p class="sub">まずは X のDMが一番早いです。対応可能な内容・見積もり目安も返信します。</p>
+        <p class="sub">
+            ご相談・お見積もりはお気軽に。内容を確認して <span class="em">1〜2営業日以内</span> に返信します。<br>
+            お急ぎなら <a class="inline" href="https://x.com/" target="_blank" rel="noopener">XのDM</a> が一番早いです。
+        </p>
+
+        <div class="contact">
+            <div class="contact-card">
+                <h3>フォームで送る</h3>
+
+                <!-- Netlify Forms -->
+                <form name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field"
+                    class="form">
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <!-- spam対策（表示しない項目） -->
+                    <p class="hidden">
+                        <label>Don’t fill this out: <input name="bot-field" /></label>
+                    </p>
+
+                    <label class="field">
+                        <span>お名前</span>
+                        <input type="text" name="name" placeholder="例）山田 太郎" required />
+                    </label>
+
+                    <label class="field">
+                        <span>メールアドレス</span>
+                        <input type="email" name="email" placeholder="example@gmail.com" required />
+                    </label>
+
+                    <label class="field">
+                        <span>ご相談内容</span>
+                        <textarea name="message" rows="6" placeholder="例）LP制作の相談 / 既存サイトの改修 / Reactの実装サポート など"
+                            required></textarea>
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="btn primary" type="submit">送信する</button>
+
+                        <!-- メールで送る（mailto） -->
+                        <a class="btn"
+                            href="mailto:shuhei.oku1007@gmail.com?subject=Portfolio%20Inquiry&body=お名前:%0D%0Aご相談内容:%0D%0A">
+                            メールで送る
+                        </a>
+                    </div>
+
+                    <p class="note">※ 送信後、サンクスページに移動します</p>
+                </form>
+            </div>
+
+            <div class="contact-card">
+                <h3>連絡先</h3>
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="k">X</span>
+                        <a class="v" href="https://x.com/" target="_blank" rel="noopener">DMで相談する</a>
+                    </li>
+
+                    <li>
+                        <span class="k">Email</span>
+                        <a class="v" href="mailto:shuhei.oku1007@gmail.com?subject=Portfolio%20Inquiry">メールで送る</a>
+                    </li>
+
+                    <li>
+                        <span class="k">対応範囲</span>
+                        <span class="v">Web制作 / UI改善 / React実装</span>
+                    </li>
+
+                    <li>
+                        <span class="k">返信目安</span>
+                        <span class="v">1〜2営業日以内</span>
+                    </li>
+                </ul>
+
+                <div class="mini-cta">
+                    <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Xで相談する</a>
+                    <a class="btn" href="#top">ページ上部へ</a>
+                </div>
+            </div>
+        </div>
+        <!-- ===== /Contact ===== -->
+
+
 
         <footer>© Portfolio</footer>
     </div>
