@@ -1,0 +1,16 @@
+.p-topfaq {
+  &__head {
+    margin-bottom: 14px;
+  }
+  &__lead {
+    margin: 8px 0 0;
+    color: var(--c-muted);
+    line-height: 1.9;
+  }
+  &__actions {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

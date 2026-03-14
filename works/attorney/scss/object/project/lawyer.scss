@@ -1,0 +1,168 @@
+.p-lawyer {
+  &__hero {
+    padding: 22px;
+  }
+
+  &__heroGrid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 18px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__photo {
+    border-radius: 18px;
+    border: 1px solid var(--c-line);
+    background: rgba(31, 42, 68, 0.06);
+    min-height: 260px;
+    display: grid;
+    place-items: center;
+  }
+
+  &__photoPh {
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    color: var(--c-muted);
+  }
+
+  &__role {
+    font-weight: 900;
+    color: var(--c-navy);
+    margin-bottom: 6px;
+  }
+
+  &__name {
+    margin: 0 0 10px;
+    font-size: 28px;
+    letter-spacing: 0.2px;
+  }
+
+  &__nameEn {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--c-muted);
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  &__message {
+    margin: 0 0 14px;
+    line-height: 1.95;
+    color: var(--c-text);
+  }
+
+  &__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  &__mini {
+    border-top: 1px solid var(--c-line);
+    padding-top: 12px;
+    display: grid;
+    gap: 10px;
+  }
+
+  &__miniItem {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+  }
+
+  &__miniLabel {
+    font-weight: 900;
+    color: var(--c-navy);
+  }
+  &__miniValue {
+    color: var(--c-muted);
+    line-height: 1.75;
+  }
+
+  &__grid2 {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 22px;
+    margin-top: 22px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__profileCard {
+    padding: 18px;
+  }
+
+  &__dlRow {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--c-line);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    dt {
+      font-weight: 900;
+      color: var(--c-navy);
+    }
+    dd {
+      margin: 0;
+      color: var(--c-muted);
+      line-height: 1.75;
+    }
+  }
+
+  &__timeline {
+    padding: 18px;
+  }
+
+  &__timelineList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+
+  &__timelineItem {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--c-line);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__time {
+    font-weight: 900;
+    color: var(--c-navy);
+  }
+  &__tlBody {
+    color: var(--c-muted);
+    line-height: 1.8;
+  }
+
+  &__muted {
+    margin: 12px 0 0;
+    color: var(--c-muted);
+    font-size: 13px;
+  }
+}

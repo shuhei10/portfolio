@@ -1,0 +1,19 @@
+.p-fees__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.p-fees__block {
+  margin-bottom: 22px;
+}
+.p-fees__note {
+  margin: 10px 0 12px;
+  color: var(--c-muted);
+  font-size: 13px;
+}
+.p-fees__tablewrap {
+  overflow-x: auto;
+}
+
+/*# sourceMappingURL=fees.css.map */

@@ -1,0 +1,19 @@
+.c-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.c-check__input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--c-navy);
+}
+.c-check__text {
+  color: var(--c-muted);
+  line-height: 1.7;
+}
+.c-check__text a {
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=check.css.map */

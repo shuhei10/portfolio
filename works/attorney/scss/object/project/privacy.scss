@@ -1,0 +1,20 @@
+.p-privacy {
+  &__card {
+    padding: 22px;
+  }
+
+  &__updated {
+    margin: 0 0 14px;
+    color: var(--c-muted);
+    font-size: 13px;
+  }
+
+  &__section {
+    margin-top: 18px;
+  }
+
+  &__text {
+    margin: 10px 0 12px;
+    line-height: 1.9;
+  }
+}

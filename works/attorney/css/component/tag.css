@@ -1,0 +1,15 @@
+.c-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(176, 141, 87, 0.12);
+  color: var(--c-navy);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  border: 1px solid rgba(176, 141, 87, 0.25);
+}
+
+/*# sourceMappingURL=tag.css.map */

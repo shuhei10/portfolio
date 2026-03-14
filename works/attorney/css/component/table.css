@@ -1,0 +1,21 @@
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.c-table th,
+.c-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--c-line);
+  vertical-align: top;
+  text-align: left;
+}
+.c-table thead th {
+  background: rgba(31, 42, 68, 0.04);
+  font-weight: 900;
+}
+.c-table tbody tr:hover {
+  background: rgba(176, 141, 87, 0.06);
+}
+
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,24 @@
+.p-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+@media (max-width: 980px) {
+  .p-form__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.p-form__actions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.p-form__note {
+  margin: 0;
+  color: var(--c-muted);
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=form.css.map */

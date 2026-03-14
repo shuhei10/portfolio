@@ -1,0 +1,22 @@
+.p-fees {
+  &__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 18px;
+  }
+
+  &__block {
+    margin-bottom: 22px;
+  }
+
+  &__note {
+    margin: 10px 0 12px;
+    color: var(--c-muted);
+    font-size: 13px;
+  }
+
+  &__tablewrap {
+    overflow-x: auto;
+  }
+}

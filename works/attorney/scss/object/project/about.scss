@@ -1,0 +1,100 @@
+.p-about {
+  &__block {
+    margin-bottom: 22px;
+  }
+
+  &__card {
+    padding: 22px;
+  }
+
+  &__text {
+    line-height: 1.95;
+    margin: 0 0 12px;
+  }
+
+  &__steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+
+  &__step {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--c-line);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__stepNo {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    color: var(--c-navy);
+    background: rgba(31, 42, 68, 0.06);
+    border: 1px solid rgba(31, 42, 68, 0.14);
+  }
+
+  &__stepTitle {
+    font-weight: 900;
+    color: var(--c-navy);
+    margin-bottom: 4px;
+  }
+
+  &__actions {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__dlRow {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--c-line);
+    &:last-child {
+      border-bottom: 0;
+    }
+    dt {
+      font-weight: 900;
+      color: var(--c-navy);
+    }
+    dd {
+      margin: 0;
+      color: var(--c-muted);
+      line-height: 1.8;
+    }
+  }
+
+  &__map {
+    margin-top: 14px;
+    border-radius: 18px;
+    border: 1px solid var(--c-line);
+    background: rgba(31, 42, 68, 0.06);
+    min-height: 220px;
+    display: grid;
+    place-items: center;
+  }
+
+  &__mapPh {
+    font-weight: 900;
+    color: var(--c-muted);
+    letter-spacing: 0.2px;
+  }
+
+  &__muted {
+    margin: 10px 0 0;
+    color: var(--c-muted);
+    font-size: 13px;
+  }
+}

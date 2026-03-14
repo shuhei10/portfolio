@@ -1,0 +1,89 @@
+.p-about__block {
+  margin-bottom: 22px;
+}
+.p-about__card {
+  padding: 22px;
+}
+.p-about__text {
+  line-height: 1.95;
+  margin: 0 0 12px;
+}
+.p-about__steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.p-about__step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--c-line);
+}
+.p-about__step:last-child {
+  border-bottom: 0;
+}
+.p-about__stepNo {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: var(--c-navy);
+  background: rgba(31, 42, 68, 0.06);
+  border: 1px solid rgba(31, 42, 68, 0.14);
+}
+.p-about__stepTitle {
+  font-weight: 900;
+  color: var(--c-navy);
+  margin-bottom: 4px;
+}
+.p-about__actions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.p-about__dlRow {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--c-line);
+}
+.p-about__dlRow:last-child {
+  border-bottom: 0;
+}
+.p-about__dlRow dt {
+  font-weight: 900;
+  color: var(--c-navy);
+}
+.p-about__dlRow dd {
+  margin: 0;
+  color: var(--c-muted);
+  line-height: 1.8;
+}
+.p-about__map {
+  margin-top: 14px;
+  border-radius: 18px;
+  border: 1px solid var(--c-line);
+  background: rgba(31, 42, 68, 0.06);
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+}
+.p-about__mapPh {
+  font-weight: 900;
+  color: var(--c-muted);
+  letter-spacing: 0.2px;
+}
+.p-about__muted {
+  margin: 10px 0 0;
+  color: var(--c-muted);
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=about.css.map */

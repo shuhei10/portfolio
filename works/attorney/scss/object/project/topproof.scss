@@ -1,0 +1,47 @@
+.p-topproof {
+  &__head {
+    margin-bottom: 14px;
+  }
+
+  &__lead {
+    margin: 8px 0 0;
+    color: var(--c-muted);
+    line-height: 1.9;
+  }
+
+  &__stats {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__stat {
+    padding: 18px;
+    text-align: center;
+  }
+
+  &__num {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--c-navy);
+    letter-spacing: 0.2px;
+  }
+
+  &__label {
+    margin-top: 6px;
+    color: var(--c-muted);
+    font-weight: 800;
+    font-size: 13px;
+  }
+
+  &__note {
+    margin: 10px 0 0;
+    color: var(--c-muted);
+    font-size: 13px;
+  }
+}

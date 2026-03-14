@@ -1,0 +1,23 @@
+.c-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  border: 1px solid transparent;
+
+  &--req {
+    background: rgba(176, 141, 87, 0.14);
+    color: var(--c-navy);
+    border-color: rgba(176, 141, 87, 0.22);
+  }
+
+  &--opt {
+    background: rgba(31, 42, 68, 0.06);
+    color: var(--c-muted);
+    border-color: rgba(31, 42, 68, 0.12);
+  }
+}

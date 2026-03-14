@@ -1,0 +1,17 @@
+.p-privacy__card {
+  padding: 22px;
+}
+.p-privacy__updated {
+  margin: 0 0 14px;
+  color: var(--c-muted);
+  font-size: 13px;
+}
+.p-privacy__section {
+  margin-top: 18px;
+}
+.p-privacy__text {
+  margin: 10px 0 12px;
+  line-height: 1.9;
+}
+
+/*# sourceMappingURL=privacy.css.map */

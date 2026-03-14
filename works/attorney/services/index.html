@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>取扱業務 | 青葉法律事務所</title>
+    <meta name="description" content="青葉法律事務所の取扱業務。企業法務、相続、離婚、交通事故、債務整理、顧問契約。" />
+
+    <link rel="icon" href="../favicon.ico" />
+    <meta name="theme-color" content="#1F2A44" />
+
+    <meta property="og:title" content="取扱業務 | 青葉法律事務所" />
+    <meta property="og:description" content="企業法務、相続、離婚、交通事故、債務整理、顧問契約のご案内。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/ogp-service.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="l-header" data-gsap="fade-down">
+        <div class="l-container l-header__top">
+            <a class="l-header__logo" href="../index.html">青葉法律事務所</a>
+            <div class="l-header__actions">
+                <span class="c-badge c-badge--pill">TEL 03-xxxx-xxxx</span>
+                <a class="c-btn c-btn--primary" href="../index.html#contact-form">無料相談</a>
+            </div>
+        </div>
+
+        <nav class="l-nav" aria-label="グローバルナビゲーション">
+            <div class="l-container l-nav__inner">
+                <a class="l-nav__link" href="../about.html">事務所紹介</a>
+                <a class="l-nav__link is-active" href="../services/">取扱業務</a>
+                <a class="l-nav__link" href="../lawyer/">弁護士紹介</a>
+                <a class="l-nav__link" href="../fees.html">料金</a>
+                <a class="l-nav__link" href="../news/">お知らせ</a>
+                <a class="l-nav__link" href="../index.html#contact-form">お問い合わせ</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Head -->
+    <section class="p-pagehead" data-gsap="reveal-up">
+        <div class="l-container">
+            <nav class="c-breadcrumb" aria-label="パンくず">
+                <a href="../index.html">TOP</a>
+                <span aria-hidden="true">/</span>
+                <span>取扱業務</span>
+            </nav>
+
+            <h1 class="p-pagehead__title">取扱業務</h1>
+            <p class="p-pagehead__lead">
+                状況整理 → 方針提示 → 実行まで、必要な範囲でサポートします。まずはお気軽にご相談ください。
+            </p>
+
+            <!-- Filters -->
+            <div class="p-services__filters" aria-label="カテゴリ" role="tablist">
+                <button class="c-chip is-active" type="button" data-filter="all" role="tab"
+                    aria-selected="true">すべて</button>
+                <button class="c-chip" type="button" data-filter="biz" role="tab" aria-selected="false">企業</button>
+                <button class="c-chip" type="button" data-filter="personal" role="tab" aria-selected="false">個人</button>
+                <button class="c-chip" type="button" data-filter="retainer" role="tab" aria-selected="false">継続</button>
+            </div>
+            <p class="p-services__filterhint">※カテゴリは目安です。</p>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="l-section p-services">
+        <div class="l-container">
+
+            <div class="c-grid c-grid--3" data-gsap="reveal-up">
+
+                <!-- Corporate -->
+                <a class="c-card p-services__item" href="../services/corporate.html" data-tags="biz">
+                    <div class="p-services__tags">
+                        <span class="c-tag">企業</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 20V7l8-3 8 3v13" stroke="currentColor" stroke-width="1.8"
+                                stroke-linejoin="round" />
+                            <path d="M8 20v-6h8v6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            <path d="M8 10h.01M12 10h.01M16 10h.01" stroke="currentColor" stroke-width="2.4"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">企業法務</div>
+                    <div class="c-card__text">契約書レビュー、予防法務、トラブル初動、交渉支援など。</div>
+                </a>
+
+                <!-- Inheritance -->
+                <a class="c-card p-services__item" href="../services/inheritance.html" data-tags="personal">
+                    <div class="p-services__tags">
+                        <span class="c-tag">個人</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 21V7a5 5 0 0 1 10 0v14" stroke="currentColor" stroke-width="1.8"
+                                stroke-linejoin="round" />
+                            <path d="M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M9.5 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">相続</div>
+                    <div class="c-card__text">遺産分割、遺言、相続放棄。争点整理から手続きまで。</div>
+                </a>
+
+                <!-- Divorce -->
+                <a class="c-card p-services__item" href="../services/divorce.html" data-tags="personal">
+                    <div class="p-services__tags">
+                        <span class="c-tag">個人</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 8a4 4 0 1 0 8 0" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M7 13l2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <path d="M17 13l-2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">離婚問題</div>
+                    <div class="c-card__text">協議・調停・親権・養育費。落とし所を現実的に整理します。</div>
+                </a>
+
+                <!-- Accident (car icon) -->
+                <a class="c-card p-services__item" href="../services/accident.html" data-tags="personal">
+                    <div class="p-services__tags">
+                        <span class="c-tag">個人</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 14l2-5h14l2 5" stroke="currentColor" stroke-width="1.8"
+                                stroke-linejoin="round" />
+                            <rect x="4" y="14" width="16" height="4" rx="1.5" stroke="currentColor"
+                                stroke-width="1.8" />
+                            <circle cx="7" cy="19" r="1.6" fill="currentColor" />
+                            <circle cx="17" cy="19" r="1.6" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">交通事故</div>
+                    <div class="c-card__text">示談、後遺障害、慰謝料。交渉方針を整理して進めます。</div>
+                </a>
+
+                <!-- Debt (coin icon) -->
+                <a class="c-card p-services__item" href="../services/debt.html" data-tags="personal">
+                    <div class="p-services__tags">
+                        <span class="c-tag">個人</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <ellipse cx="12" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" stroke="currentColor" stroke-width="1.8" />
+                            <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" stroke="currentColor" stroke-width="1.8" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">債務整理</div>
+                    <div class="c-card__text">任意整理・個人再生・破産。状況に合う選択肢を整理します。</div>
+                </a>
+
+                <!-- Retainer -->
+                <a class="c-card p-services__item" href="../services/retainer.html" data-tags="biz retainer">
+                    <div class="p-services__tags">
+                        <span class="c-tag">企業</span>
+                        <span class="c-tag">継続</span>
+                    </div>
+                    <div class="p-services__icon" aria-hidden="true">
+                        <svg class="p-services__svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 7h10v14H7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            <path d="M9 4h6v3H9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            <path d="M9 11h6M9 14h6M9 17h5" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="c-card__title">顧問契約</div>
+                    <div class="c-card__text">日常相談の窓口に。予防法務とスピード対応を重視します。</div>
+                </a>
+
+            </div>
+
+            <!-- CTA -->
+            <section class="l-section p-cta" style="padding-top: 24px; padding-bottom: 0;">
+                <div class="c-card p-cta__card">
+                    <div class="p-cta__grid">
+                        <div class="p-cta__copy">
+                            <h2 class="c-heading2 p-cta__title">まずは無料相談で整理しましょう</h2>
+                            <p class="p-cta__lead">
+                                相談だけでも構いません。状況整理と方針提示から進めます。
+                            </p>
+                            <div class="p-cta__meta">
+                                <span class="c-badge c-badge--pill">初回相談30分無料</span>
+                                <span class="c-badge c-badge--pill">オンライン相談可</span>
+                                <span class="c-badge c-badge--pill">平日 9:00–18:00</span>
+                            </div>
+                        </div>
+
+                        <div class="p-cta__actions">
+                            <a class="c-btn c-btn--primary p-cta__btn" href="../index.html#contact-form">お問い合わせフォーム</a>
+                            <a class="c-btn c-btn--outline p-cta__btn" href="tel:03xxxxxxxx">電話で相談する</a>
+                            <p class="p-cta__note">お急ぎの方はお電話がスムーズです。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        <div class="l-container l-footer__grid">
+            <div class="l-footer__brand">
+                <div class="l-footer__logo">青葉法律事務所</div>
+                <div class="l-footer__info">
+                    〒000-0000 東京都港区〇〇 1-2-3<br />
+                    営業時間：平日 9:00–18:00<br />
+                    TEL：03-xxxx-xxxx
+                </div>
+            </div>
+
+            <nav class="l-footer__nav" aria-label="フッターナビゲーション">
+                <a class="l-footer__link" href="../services/">取扱業務</a>
+                <a class="l-footer__link" href="../lawyer/">弁護士紹介</a>
+                <a class="l-footer__link" href="../fees.html">料金</a>
+                <a class="l-footer__link" href="../news/">お知らせ</a>
+                <a class="l-footer__link" href="../index.html#contact-form">お問い合わせ</a>
+                <a class="l-footer__link" href="../privacy.html">プライバシーポリシー</a>
+            </nav>
+        </div>
+
+        <div class="l-container l-footer__bottom">
+            <small>© 青葉法律事務所</small>
+        </div>
+    </footer>
+
+    <!-- Fixed CTA (SP) -->
+    <div class="p-fixedcta" role="region" aria-label="固定お問い合わせ">
+        <a class="p-fixedcta__btn p-fixedcta__btn--tel" href="tel:03xxxxxxxx">電話</a>
+        <a class="p-fixedcta__btn p-fixedcta__btn--consult" href="../index.html#contact-form">無料相談</a>
+    </div>
+
+</body>
+
+</html>

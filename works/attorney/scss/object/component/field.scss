@@ -1,0 +1,48 @@
+.c-field {
+  display: grid;
+  gap: 8px;
+
+  &__label {
+    font-weight: 900;
+    color: var(--c-navy);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__control {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 14px;
+    border: 1px solid var(--c-line);
+    background: #fff;
+    outline: none;
+
+    &:focus {
+      border-color: rgba(176, 141, 87, 0.6);
+      box-shadow: 0 0 0 4px rgba(176, 141, 87, 0.14);
+    }
+  }
+
+  &__control--ta {
+    resize: vertical;
+    min-height: 160px;
+    line-height: 1.9;
+  }
+
+  &__help {
+    color: var(--c-muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  &__count {
+    color: var(--c-muted);
+    font-size: 12px;
+    text-align: right;
+  }
+
+  &--full {
+    grid-column: 1 / -1;
+  }
+}
