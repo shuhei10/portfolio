@@ -148,8 +148,8 @@ body {
 /* ========= Contact Form & List ========= */
 .contact {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin-top: 32px;
 }
 
@@ -232,12 +232,19 @@ body {
     word-break: break-all;
 }
 
-.mini-cta {
-    margin-top: auto;
-    padding-top: 24px;
+.mini-cta-wrapper {
+    margin-top: 60px;
     display: flex;
-    gap: 12px;
+    justify-content: center;
+    border-top: 1px solid var(--line);
+    padding-top: 40px;
+}
+
+.mini-cta {
+    display: flex;
+    gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hidden { display: none; }
