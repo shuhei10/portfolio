@@ -353,18 +353,54 @@ header {
     margin-bottom: 32px;
 }
 
-/* ========= About ========= */
-.about-content {
-    font-size: 18px;
-    line-height: 1.8;
+/* ========= Profile ========= */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 40px;
+    align-items: start;
 }
 
-.about-content .highlight {
-    margin-top: 24px;
+@media (max-width: 860px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-bio p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.profile-meta {
+    padding: 32px;
+}
+
+.meta-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.meta-item:last-child {
+    margin-bottom: 0;
+}
+
+.meta-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.meta-value {
+    font-size: 14px;
     font-weight: 600;
     color: var(--text);
-    border-left: 4px solid var(--accent);
-    padding-left: 20px;
 }
 
 /* ========= Works Refine ========= */
