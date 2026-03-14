@@ -427,12 +427,12 @@ header {
 
 .service-card .icon {
     font-size: 32px;
-    margin-bottom: 16px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
-
 .service-card h3 {
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .service-card p {
@@ -443,22 +443,21 @@ header {
 
 /* ========= Pricing ========= */
 .pricing-table {
-    overflow-x: auto;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
-table {
+.pricing-table table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
-
-th, td {
+.pricing-table th, .pricing-table td {
+    padding: 15px;
     text-align: left;
-    padding: 16px;
     border-bottom: 1px solid var(--line);
 }
-
-th {
+.pricing-table th {
     font-size: 14px;
     color: var(--muted);
 }
@@ -466,29 +465,54 @@ th {
 td {
     font-weight: 600;
 }
+.pricing-table .note {
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+}
 
 /* ========= Flow ========= */
 .flow-steps {
-    display: grid;
-    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
 }
-
 .step {
     display: flex;
-    align-items: flex-start;
     gap: 20px;
-    padding: 24px;
-    background: var(--card);
-    border-radius: var(--radius);
-    border: 1px solid var(--line);
+    margin-bottom: 40px;
+    position: relative;
+}
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background: var(--line);
+}
+.step .num {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    opacity: 1; /* Remove the 0.3 opacity */
 }
 
-.step .num {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--accent);
-    opacity: 0.3;
-    line-height: 1;
+/* Skills Polish */
+.skill-category.card {
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.skill-category.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
 }
 
 .step h4 {
