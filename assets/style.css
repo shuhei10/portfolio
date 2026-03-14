@@ -266,6 +266,17 @@ body {
     border-radius: 2px;
 }
 
+.category-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+}
+
 /* ========= Header & Nav ========= */
 header {
     position: fixed;
