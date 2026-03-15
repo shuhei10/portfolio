@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Portfolio | Shuhei</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="nav">
+                <a href="#" class="logo">Portfolio</a>
+                <div class="nav-links">
+                    <a href="#about">Profile</a>
+                    <a href="#works">Works</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#flow">Flow</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="hero-content">
+                <h1>Front-end Developer /<br>Web Designer</h1>
+                <p class="sub">
+                    React・HTML/CSSを使用した<br>
+                    Webサイト制作・管理システム開発を行っています。
+                </p>
+                <div class="cta">
+                    <a class="btn primary" href="#works">Worksを見る</a>
+                    <a class="btn" href="#contact">お問い合わせ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile (About) -->
+        <section id="about" class="section">
+            <h2 class="section-title">Profile</h2>
+            <div class="profile-container">
+                <div class="profile-bio">
+                    <p>
+                        フロントエンド開発を中心に<br>
+                        Webサイト制作やWebアプリケーション開発を行っています。
+                    </p>
+                    <p>
+                        React・Node.js・MariaDBを使用した<br>
+                        管理システムの開発経験があります。
+                    </p>
+                    <p>
+                        ユーザーにとって使いやすいUIと<br>
+                        保守しやすい構造を意識して制作しています。
+                    </p>
+                </div>
+                <div class="profile-meta card">
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Japan</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Focus</span>
+                        <span class="meta-value">Webサイト制作 / React開発 / UI/UX改善</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tools</span>
+                        <span class="meta-value">Figma / GitHub / Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works -->
+        <section id="works" class="section">
+            <h2 class="section-title">Works</h2>
+            
+            <h3 class="category-title">App Development (React / Express)</h3>
+            <div class="grid">
+                <!-- School Admin -->
+                <a class="card work-card featured" href="./works/school-admin/index.html">
+                    <img src="./assets/img/school-admin.png" alt="学校管理システム" class="thumb">
+                    <div class="card-body">
+                        <div class="badge">Full-stack System</div>
+                        <div class="title">学校管理システム (School Admin)</div>
+                        <div class="meta">
+                            React + Node.js(Express) / MariaDB / Docker対応<br>
+                            出欠管理、成績管理、ロールベースのアクセス制御を実装。
+                        </div>
+                        <div class="tags">
+                            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MariaDB</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+
+                <!-- 世界遺産クイズ -->
+                <a class="card work-card" href="./works/quiz/case-study.html">
+                    <img src="./assets/img/wh-quiz.jpg" alt="世界遺産クイズ" class="thumb">
+                    <div class="card-body">
+                        <div class="title">世界遺産クイズ（PWA）</div>
+                        <div class="meta">React + TypeScript / Vite / PWA対応</div>
+                        <div class="tags">
+                            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">PWA</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+            </div>
+
+            <h3 class="category-title" style="margin-top: 60px;">Web Production (HTML / CSS / JS)</h3>
+            <div class="grid">
+                <!-- EduFlow LP -->
+                <a class="card work-card" href="./works/eduflow-lp/index.html">
+                    <img src="./assets/img/eduflow-lp.png" alt="EduFlow LP" class="thumb">
+                    <div class="card-body">
+                        <div class="title">スクール向けLP（EduFlow）</div>
+                        <div class="meta">
+                            「サービス設計もできる実装力」を形にしたLP。<br>
+                            ダークテーマ × モダンUI。SCSS/JSでの実装。
+                        </div>
+                        <div class="tags">
+                            <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">JS</span><span class="tag">Vite</span>
+                        </div>
+                        <div class="more">実物を見る →</div>
+                    </div>
+                </a>
+
+                <!-- 青葉法律事務所 -->
+                <a class="card work-card" href="./works/attorney/case-study.html">
+                    <img src="./assets/img/attorney.jpg" alt="青葉法律事務所" class="thumb">
+                    <div class="card-body">
+                        <div class="title">法律事務所サイト（青葉法律事務所）</div>
+                        <div class="meta">
+                            和モダン × プレミアムな多ページ構成。<br>
+                            GSAPによる上品な演出とアクセシビリティを追求。
+                        </div>
+                        <div class="tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">GSAP</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+
+                <!-- こもれび庵 -->
+                <a class="card work-card" href="./works/komorebi-an/case-study.html">
+                    <img src="./assets/img/komorebi.jpg" alt="森の宿 こもれび庵" class="thumb">
+                    <div class="card-body">
+                        <div class="title">旅館サイト（森の宿 こもれび庵）</div>
+                        <div class="meta">LP/ブランドサイト｜レスポンシブ</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+
+                <!-- Aerblu -->
+                <a class="card work-card" href="./works/aerblu/case-study.html">
+                    <img src="./assets/img/aerblu.jpg" alt="Aerblu" class="thumb">
+                    <div class="card-body">
+                        <div class="title">ブランドサイト（Aerblu）</div>
+                        <div class="meta">デザイン重視の1ページ構成</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span><span class="tag">CSS</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+
+                <!-- WAVESTUDIO -->
+                <a class="card work-card" href="./works/wavestudio/case-study.html">
+                    <img src="./assets/img/wavestudio.jpg" alt="WAVESTUDIO" class="thumb">
+                    <div class="card-body">
+                        <div class="title">デザインスクール（WAVESTUDIO）</div>
+                        <div class="meta">機能的でポップなサービスサイト</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">JS</span>
+                        </div>
+                        <div class="more">制作ストーリーを見る →</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h3>Front-end</h3>
+                    <div class="tags">
+                        <span class="tag">HTML / CSS / SCSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category card">
+                    <h3>Back-end</h3>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                    </div>
+                </div>
+                <div class="skill-category card">
+                    <h3>Database</h3>
+                    <div class="tags">
+                        <span class="tag">MariaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category card">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">Render</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card card">
+                    <div class="icon">🌐</div>
+                    <h3>Webサイト制作</h3>
+                    <p>企業サイトやサービスサイトなど、目的に合わせたWebサイトを制作します。</p>
+                </div>
+                <div class="service-card card">
+                    <div class="icon">📑</div>
+                    <h3>LP制作</h3>
+                    <p>商品やサービスの魅力を伝えるランディングページを制作します。</p>
+                </div>
+                <div class="service-card card">
+                    <div class="icon">🎨</div>
+                    <h3>Webデザイン</h3>
+                    <p>Figmaを使用したUIデザインやワイヤーフレーム制作を行います。</p>
+                </div>
+                <div class="service-card card">
+                    <div class="icon">⚙️</div>
+                    <h3>Webアプリケーション開発</h3>
+                    <p>React / Node.js を使用した管理画面やWebアプリケーションの開発が可能です。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="section">
+            <h2 class="section-title">Pricing</h2>
+            <div class="pricing-table card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>内容</th>
+                            <th>料金（目安）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LP制作</td>
+                            <td>¥30,000〜</td>
+                        </tr>
+                        <tr>
+                            <td>Webサイト制作</td>
+                            <td>¥50,000〜</td>
+                        </tr>
+                        <tr>
+                            <td>Webデザイン</td>
+                            <td>¥20,000〜</td>
+                        </tr>
+                        <tr>
+                            <td>Webアプリケーション開発</td>
+                            <td>¥80,000〜</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">※内容やページ数によりお見積りいたします。まずはお気軽にご相談ください。</p>
+            </div>
+        </section>
+
+        <!-- Flow -->
+        <section id="flow" class="section">
+            <h2 class="section-title">Flow</h2>
+            <div class="flow-steps">
+                <div class="step">
+                    <span class="num">01</span>
+                    <div class="step-body">
+                        <h4>お問い合わせ</h4>
+                        <p>お問い合わせフォームまたはXのDMよりご連絡ください。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="num">02</span>
+                    <div class="step-body">
+                        <h4>ヒアリング</h4>
+                        <p>制作内容や目的について詳しくお伺いします。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="num">03</span>
+                    <div class="step-body">
+                        <h4>お見積り</h4>
+                        <p>ヒアリング内容に応じて最適なプランとお見積りを作成します。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="num">04</span>
+                    <div class="step-body">
+                        <h4>制作</h4>
+                        <p>デザイン・実装を丁寧に実直に進めます。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="num">05</span>
+                    <div class="step-body">
+                        <h4>納品</h4>
+                        <p>完成後、最終確認を行い納品いたします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <p class="sub">
+                Web制作のご相談やお見積りなどお気軽にお問い合わせください。<br>
+                通常 <span class="em">1〜2営業日以内</span> にご返信いたします。
+            </p>
+
+            <div class="contact">
+                <div class="contact-card">
+                    <h3>フォームで送る</h3>
+                    <form name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field" class="form">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p class="hidden">
+                            <label>Don’t fill this out: <input name="bot-field" /></label>
+                        </p>
+                        <label class="field">
+                            <span>お名前</span>
+                            <input type="text" name="name" placeholder="例）山田 太郎" required />
+                        </label>
+                        <label class="field">
+                            <span>メールアドレス</span>
+                            <input type="email" name="email" placeholder="example@gmail.com" required />
+                        </label>
+                        <label class="field">
+                            <span>ご相談内容</span>
+                            <textarea name="message" rows="6" placeholder="例）LP制作の相談 / 管理システムの開発サポートなど" required></textarea>
+                        </label>
+                        <div class="form-actions">
+                            <button class="btn primary" type="submit">送信する</button>
+                            <a class="btn" href="mailto:shuhei.oku1007@gmail.com?subject=Portfolio%20Inquiry">メールで送る</a>
+                        </div>
+                        <p class="note">※ 送信後、サンクスページに移動します</p>
+                    </form>
+                </div>
+
+                <div class="contact-card info">
+                    <h3>連絡先</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <span class="label">X</span>
+                            <a class="value" href="https://x.com/" target="_blank" rel="noopener">DMで相談する</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Email</span>
+                            <a class="value" href="mailto:shuhei.oku1007@gmail.com">shuhei.oku1007@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">対応範囲</span>
+                            <span class="value">Web制作 / React開発 / システム設計</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-cta-wrapper">
+                <div class="mini-cta">
+                    <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">Xで相談する</a>
+                    <a class="btn" href="#top">Topへ戻る</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-inner">
+                <p>© 2026 Shuhei Portfolio</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
