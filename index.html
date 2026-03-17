@@ -403,19 +403,30 @@
             </div>
         </section>
 
+        <footer>
+            <div class="footer-inner">
+                <p>© 2026 Shuhei Portfolio</p>
+            </div>
         </footer>
     </div>
 
     <script>
-        // Cloudflare PagesでPOST時に405エラーが出るのを防ぎ、かつ遷移を確認するための簡易スクリプト
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            const form = e.target;
-            // 実際にSSGformなどのURLを設定した場合は、このスクリプトを削除するか
-            // 正常にPOSTが飛ぶように調整する必要があります。
-            if (form.getAttribute('action') === 'thanks.html') {
-                e.preventDefault();
-                // 本来はここでデータ送信処理などを行う
-                window.location.href = './thanks.html';
+        // DOMが読み込まれてから実行
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    console.log('Form submission intercepted');
+                    const action = form.getAttribute('action');
+                    
+                    // アクションが thanks.html の場合（＝外部サービス設定前）
+                    // Cloudflare Pagesでの405エラーを回避するためにJSで遷移させる
+                    if (action === 'thanks.html' || action.includes('YOUR_FORM_ENDPOINT')) {
+                        e.preventDefault();
+                        console.log('Redirecting to thanks.html via JS');
+                        window.location.href = './thanks.html';
+                    }
+                });
             }
         });
     </script>
