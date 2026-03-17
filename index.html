@@ -344,7 +344,9 @@
             <div class="contact">
                 <div class="contact-card">
                     <h3>フォームで送る</h3>
-                    <form name="contact" method="POST" action="YOUR_FORM_ENDPOINT_HERE" class="form">
+                    <form name="contact" id="contact-form" method="POST" action="thanks.html" class="form">
+                        <!-- Cloudflare Pages等の静的ホスティングでは直接POSTすると405エラーになるため、
+                             外部サービス（SSGform等）を使うか、JSで制御する必要があります -->
                         <p class="hidden">
                             <label>Don’t fill this out: <input name="_honeypot" /></label>
                         </p>
@@ -401,12 +403,22 @@
             </div>
         </section>
 
-        <footer>
-            <div class="footer-inner">
-                <p>© 2026 Shuhei Portfolio</p>
-            </div>
         </footer>
     </div>
+
+    <script>
+        // Cloudflare PagesでPOST時に405エラーが出るのを防ぎ、かつ遷移を確認するための簡易スクリプト
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const form = e.target;
+            // 実際にSSGformなどのURLを設定した場合は、このスクリプトを削除するか
+            // 正常にPOSTが飛ぶように調整する必要があります。
+            if (form.getAttribute('action') === 'thanks.html') {
+                e.preventDefault();
+                // 本来はここでデータ送信処理などを行う
+                window.location.href = './thanks.html';
+            }
+        });
+    </script>
 </body>
 
 </html>
